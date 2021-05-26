@@ -1,9 +1,20 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Odibee+Sans&family=Pattaya&family=Roboto:wght@100;400&family=ZCOOL+KuaiLe&display=swap");
+@import "~antd/dist/antd.css";
+@import "./tiles/BeerTile.css";
+
+body {
+  background-color: #282c34;
+  overflow: hidden;
+  /* height: 100vh; */
+}
+
 .App {
   text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 5vmin;
   pointer-events: none;
 }
 
@@ -15,13 +26,13 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: whitesmoke;
 }
 
 .App-link {
@@ -35,4 +46,118 @@
   to {
     transform: rotate(360deg);
   }
+}
+.boson-logo {
+  /* background-image: url("./logo.svg"); */
+  position: relative;
+  width: 200px;
+}
+.boson-logo p,
+.boson-logo img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.boson-logo p {
+  z-index: 2;
+  color: orangered;
+}
+.boson-logo img {
+  /* padding-left: 40px; */
+  margin-left: 45px;
+  z-index: 1;
+  /* height: 8vmin; */
+}
+
+#main-content {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #282c34;
+  /* background-color: #903477; */
+  /* background-image: url("./backgrounds/barell-and-bier.jpg"); */
+  background-image: url("./backgrounds/barell-and-bier-left.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#tile-frame {
+  border-radius: 300px;
+  border: solid #282c34;
+  margin-top: 50px;
+  padding: 8% 15% 8%;
+  display: grid;
+  row-gap: 15px;
+  column-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  width: 1050px;
+  height: 650px;
+  background-color: #282c34;
+  /* background-color: #1ba7cc; */
+  /* background-color: #282c34; */
+  background-image: url("./backgrounds/bubbles.jpg");
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: auto 250px;
+}
+
+h1,
+h2,
+h3,
+p {
+  /* font-family: "Pattaya", sans-serif; */
+  font-family: "ZCOOL KuaiLe", cursive;
+  /* font-family: "Odibee Sans", cursive; */
+  /* font-family: "Dancing Script", cursive; xx */
+}
+h1 {
+  font-size: 2rem;
+  color: whitesmoke;
+}
+
+.pagination {
+  background-color: #282c34;
+  width: 600px;
+}
+
+#test1 {
+  background-color: #282c34;
+}
+
+footer {
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+}
+
+footer p {
+  /* color: whitesmoke; */
+  padding-top: 20px;
+}
+footer img {
+  padding: 0px;
+  margin: 0px;
+}
+
+#reactor {
+  /* display: flex; */
+  position: relative;
+  width: 80.44px;
+  /* flex-direction: column; */
+}
+#reactor p,
+#reactor img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+#reactor img {
+  top: 32px;
+  left: 8px;
+  z-index: 0;
 }
