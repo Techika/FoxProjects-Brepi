@@ -19,11 +19,15 @@ function App() {
     },
   ]);
 
-  const paginatorChange = (e: any) => {
+  const paginatorChange = (currentPage: number) => {
     // find out what Types I should use there instead...
-    console.log("This thing was clicked", e);
-    setCurrentPage(e);
+    console.log("This thing was clicked", currentPage);
+    setCurrentPage(currentPage);
     console.log("Beer InfoX", beerInfo);
+    const beerLevel = (100 / Math.ceil(itemCount / 6)) * currentPage;
+    document.getElementById(
+      "tile-frame",
+    )!.style.backgroundSize = `auto ${beerLevel}%`;
   };
 
   const test1Clicked = (e: any) => {
