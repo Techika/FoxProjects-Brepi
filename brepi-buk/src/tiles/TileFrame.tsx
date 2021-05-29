@@ -14,7 +14,7 @@ const TileFrame: React.FC<TileFrameProps> = (props) => {
   //   }
   // const hiddenTile = useRef(null);
   function beerClicked(e: any, id: string): void {
-    setHiddenTile(id);
+    hiddenTile === id ? setHiddenTile("") : setHiddenTile(id);
   }
   const [hiddenTile, setHiddenTile] = useState("");
   return (

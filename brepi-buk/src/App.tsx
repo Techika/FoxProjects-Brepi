@@ -11,7 +11,7 @@ function App() {
   const [currentPage, setCurrentPage] = useState(1);
   const [beerInfo, setBeerInfo] = useState<TileFace[]>([
     {
-      id: 0,
+      id: "0",
       name: "Beer's Name",
       description:
         "Once upona time thre was a man who had the idea of making beer lots of beer And so he didd.",
