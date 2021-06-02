@@ -1,0 +1,30 @@
+.App {
+  text-align: center;
+}
+#nav {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin: 25px 100px;
+}
+.active-page {
+  color: violet;
+}
+
+h1 {
+  margin-left: 50px;
+  text-align: left;
+}
+#states-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#excercise-wrapper {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}

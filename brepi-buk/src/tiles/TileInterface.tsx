@@ -1,5 +1,5 @@
 export default interface TileFace {
-  id: number;
+  id: string;
   name: string;
   description: string;
   image_url: string;
